@@ -1,0 +1,23 @@
+{
+  "name": "kouran-ek-dilo",
+  "private": true,
+  "description": "Power cut and water cut tracker for Mauritius — CEB & CWA notices, community reports, and alerts.",
+  "workspaces": [
+    "server",
+    "web"
+  ],
+  "scripts": {
+    "dev": "concurrently -n api,web -c yellow,cyan \"npm run dev -w server\" \"npm run dev -w web\"",
+    "build": "npm run build -w web",
+    "start": "npm run start -w server",
+    "test": "npm test -w server",
+    "typecheck": "npm run typecheck -w server && npm run typecheck -w web",
+    "ingest": "npm run ingest -w server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "engines": {
+    "node": ">=24"
+  }
+}

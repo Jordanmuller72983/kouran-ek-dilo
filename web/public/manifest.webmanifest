@@ -1,0 +1,10 @@
+{
+  "name": "Kouran ek Dilo — Mauritius outages",
+  "short_name": "Kouran ek Dilo",
+  "description": "Power and water cuts in Mauritius by locality",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f6f5f1",
+  "theme_color": "#ffd500",
+  "icons": [{ "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
+}

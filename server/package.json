@@ -1,0 +1,25 @@
+{
+  "name": "server",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --env-file-if-exists=.env --disable-warning=ExperimentalWarning --watch src/index.ts",
+    "start": "node --env-file-if-exists=.env --disable-warning=ExperimentalWarning src/index.ts",
+    "ingest": "node --env-file-if-exists=.env --disable-warning=ExperimentalWarning src/ingest/cli.ts",
+    "test": "node --disable-warning=ExperimentalWarning --test \"test/**/*.test.ts\"",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@napi-rs/canvas": "^0.1.65",
+    "cheerio": "^1.0.0",
+    "express": "^5.1.0",
+    "pdfjs-dist": "^4.10.38",
+    "web-push": "^3.6.7"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "@types/node": "^24.0.0",
+    "@types/web-push": "^3.6.4",
+    "typescript": "^5.8.3"
+  }
+}
